@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 5vw;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 4vw;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid grey;
+}
+
+header a {
+    margin-left: 1vw;
+    color: black;
+    text-decoration: none;
+}
+
+#productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+    padding: 1vw;
+    width: 70%;
+}
+
+.producto {
+    border: 1px solid grey;
+    border-radius: 16px;
+    background-color: #dbdbdb;
+    overflow: hidden;
+}
+
+.producto button {
+    background-color: black;
+    color: white;
+    border-radius: 16px;
+    padding: 0.5vw;
+    border: none;
+    cursor: pointer;
+}
+
+#carrito {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100vh;
+    padding: 1vw;
+    background-color: #f0f0f0;
+    overflow-y: auto;
+    border-left: 1px solid grey;
+}
+
+#productos_carrito {
+    display: grid;
+    gap: 1vw;
+}
+
+.tienda_producto {
+    display: flex;
+    border: 1px solid grey;
+    padding: 1vw;
+    background-color: white;
+}
+
+#ver_carrito {
+    width: 100%;
+    padding: 1vw;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.boton_eliminar {
+    padding: 0.5vw;
+    background-color: red;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
+
+#factura_carrito {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    padding: 1vw;
+    background-color: #f0f0f0;
+    border-top: 1px solid grey;
+}
